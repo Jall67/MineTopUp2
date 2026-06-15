@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MineTopUp</title>
+<link rel="stylesheet" href="style.css">
+</head>
+  <footer>
+    © 2026 MineTopUp
+</footer>
+<body>
+
+<header>
+    <h1>🎮 MineTopUp</h1>
+    <p>Top Up Game Murah & Cepat</p>
+</header>
+<section class="banner">
+    <h2>🔥 Promo Diamond Hari Ini</h2>
+    <p>Diskon hingga 20% untuk semua game!</p>
+</section>
+<div class="container">
+
+    <h2>Pilih Game</h2>
+<input
+type="text"
+id="searchGame"
+placeholder="Cari game..."
+onkeyup="searchGame()">
+    <div class="game-grid">
+
+        <div class="game-card" onclick="pilihGame('Mobile Legends')">
+            Mobile Legends
+        </div>
+
+        <div class="game-card" onclick="pilihGame('Free Fire')">
+            Free Fire
+        </div>
+
+        <div class="game-card" onclick="pilihGame('PUBG Mobile')">
+            PUBG Mobile
+        </div>
+
+        <div class="game-card" onclick="pilihGame('Roblox')">
+            Roblox
+        </div>
+
+    </div>
+
+    <h2>Form Top Up</h2>
+
+    <input id="game" readonly placeholder="Game dipilih">
+
+    <input id="playerid" placeholder="Masukkan ID Game">
+
+    <select id="nominal">
+    <option>86 Diamond - Rp20.000</option>
+    <option>172 Diamond - Rp40.000</option>
+    <option>257 Diamond - Rp60.000</option>
+    <option>344 Diamond - Rp80.000</option>
+    <option>514 Diamond - Rp120.000</option>
+    <option>706 Diamond - Rp160.000</option>
+</select>
+    </select>
+        
+      <button onclick="checkout()">
+    Checkout
+        
+</button>
+
+<h2>Riwayat Transaksi</h2>
+
+<div id="history"></div>
+    </>
+
+</div>
+<a
+href="https://wa.me/6282110179007"
+class="wa-btn">
+💬
+</a>
+  <script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+  <script type="module" src="firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+<select id="payment">
+    <option>DANA</option>
+    <option>OVO</option>
+    <option>GoPay</option>
+    <option>QRIS</option>
+</select>
